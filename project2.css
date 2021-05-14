@@ -1,0 +1,221 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(225deg,rgba(63, 138, 224, 0.678) 70% ,rgba(42, 94, 155, 0.678)  20% ); */
+  background-image: url("temporary2.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: auto;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.color {
+  background-color: rgb(43, 43, 43);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(43, 43, 43);
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border: 1px solid rgb(32, 32, 32);
+  color: whitesmoke;
+}
+
+.nav-link.active {
+  background-color: rgb(43, 43, 43);
+}
+
+.nav {
+  /* display: flex;
+  flex-wrap: wrap; */
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  color: whitesmoke;
+  position: relative;
+  left: 2rem;
+}
+
+.form-control {
+  background-color: rgb(43, 43, 43);
+  color: whitesmoke;
+  border: 1px solid rgb(32, 32, 32);
+}
+
+.card {
+  background-color: rgb(32, 32, 32);
+  border-radius: 40px;
+  opacity: 0.9;
+  width: 17rem;
+}
+
+.card-body {
+  background-color: rgb(43, 43, 43);
+  color: whitesmoke;
+  border-radius: 40px;
+}
+
+.cardRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coin {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 2.3rem;
+  width: 23rem;
+  background-color: rgb(43, 43, 43);
+  color: #fefefe;
+}
+
+/* The Close Button */
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.headline {
+  background-color: rgb(0, 0, 3);
+  background-size: 100%;
+  height: 4rem;
+  color: #fefefe;
+}
+
+.Favorites {
+  height: 4rem;
+  font-size: 16px;
+}
+
+.logo {
+  position: relative;
+  top: -10px;
+  left: 0rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 7rem;
+}
+
+.matan {
+  height: 14rem;
+  width: 14rem;
+}
+
+.d-flex {
+  display: flex!important;
+  position: relative;
+  right: 3rem;
+}
+
+.wrapper {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.pokeball {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid black;
+  animation: frames .8s linear 0s infinite;
+}
+
+.pokeball:after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 33px;
+  background-color: red;
+  border-bottom: 4px solid black;
+  top: -4px
+}
+
+.pokeball:before {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border: 4px solid black;
+  border-radius: 50%;
+  bottom: 18px;
+  right: 18px;
+  z-index: 1;
+}
+
+/* AnimationFrames */
+
+@keyframes frames {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.blackBox {
+  background-color: black;
+  position: relative;
+  width: -webkit-fill-available;
+  height: auto;
+  opacity: 0.75;
+  color: white;
+  padding: 3rem;
+}
+
+.spinMain {
+  position: relative;
+  top: 100px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  
+}
